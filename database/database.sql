@@ -1,0 +1,14 @@
+
+CREATE TABLE propiedades (
+    id SMALLINT(5) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    direccion VARCHAR(200),
+    caracteristicas VARCHAR(200),
+    estado VARCHAR(20),
+    precioalquiler DECIMAL(6,2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
